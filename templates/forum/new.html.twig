@@ -1,0 +1,116 @@
+<html>
+<body>
+
+        <div class="page-banner-section section">
+            <div class="page-banner-wrap row row-0 d-flex align-items-center ">
+
+                <!-- Page Banner -->
+                <div class="col-lg-4 col-12 order-lg-2 d-flex align-items-center justify-content-center">
+                    <div class="page-banner">
+                        <h1>Proposez un Blog</h1>
+
+                        <div class="breadcrumb">
+                            <ul>
+                                <li><a href="">Accueil</a></li>
+                                <li><a href="">Proposer Post</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Banner -->
+                <div class="col-lg-4 col-md-6 col-12 order-lg-1">
+                </div>
+
+                <!-- Banner -->
+                <div class="col-lg-4 col-md-6 col-12 order-lg-3">
+                </div>
+            </div>
+        </div>
+        <div class="login-section section mt-90 mb-90">
+            <div class="container">
+                <div class="row">
+
+
+                    <!-- Login -->
+                    <div class="col-md-12">
+                        <div class="box box-warning">
+
+                            {{ form_start(form) }}
+                            <div class="my-custom-class-for-errors">
+                                {{ form_errors(form) }}
+                            </div>
+
+                            <div class="form-group">
+
+                                {{ form_widget(form.titre, { 'attr': {'class': 'form-control'} }) }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            {{ form_label(form.descrption, 'Description :') }}
+                            <div class="form-group">
+
+                                {{ form_widget(form.descrption, { 'attr': {'class': 'form-control'} }) }}
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-md-4">
+
+
+                            <div class="form-group">
+
+
+                                {{ form_label(form.categorie, 'Categorie :') }}
+                                <div class="input-group-addon">
+                                    {{ form_widget(form.categorie,{ 'attr': {'class': 'form-control'} }) }}
+
+                                </div>
+
+
+                                <!-- /.input group -->
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+
+
+
+
+
+                        <div class="form-group">
+                                <label for="exampleInputFile">{{ form_label(form.img, 'Choisir image :') }}</label>
+                            <div class="input-group-addon">
+                                {{ form_widget(form.img) }}
+
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+
+<div class="col-md-4">
+</div>
+                      
+
+                    <div class="col-md-4">
+                    </div>
+                </div>
+
+
+
+                    </div>
+
+                </div>
+
+
+</body>
+
+
+
+
+</html>

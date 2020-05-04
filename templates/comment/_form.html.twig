@@ -1,0 +1,14 @@
+
+
+
+{{ form_start(form) }}
+
+<div class="modal-body">
+
+    {{ form_widget(form) }}
+
+    <div class="modal-footer">
+    <button class="btn">{{ button_label|default('Save') }}</button>
+  </div>
+  </div>
+{{ form_end(form) }}

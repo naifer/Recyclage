@@ -1,0 +1,20 @@
+index:
+   path: /
+   controller: App\Controller\acceuilController::index
+produit:
+   path: /lister
+   controller: App\Controller\listerController::index
+events:
+   path: /listerEvents
+   controller: App\Controller\ListerEventController::index
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+forum:
+   path: /listerForum
+   controller: App\Controller\ListerForumController::index
+
+fos_comment_api:
+    type: rest
+    resource: "@FOSCommentBundle/Resources/config/routing.yml"
+    prefix: /api
+    defaults: { _format: html }

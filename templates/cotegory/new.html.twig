@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Cotegory{% endblock %}
+
+{% block body %}
+    <h1>Create new Cotegory</h1>
+
+    {{ include('cotegory/_form.html.twig') }}
+
+    <a href="{{ path('cotegory_index') }}">back to list</a>
+{% endblock %}

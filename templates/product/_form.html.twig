@@ -1,0 +1,22 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+<!-- Header -->
+<Body >
+    <div class="container d-flex h-100 align-items-center">
+        <div class="mx-auto text-center">
+        {{ form_start(form) }}
+            {{ form_widget(form) }}
+            <button class="btn btn-primary js-scroll-trigger">{{ button_label|default('Save') }}</button>
+        {{ form_end(form) }}
+        </div>
+    </div>
+</Body>
+
+
+</html>
